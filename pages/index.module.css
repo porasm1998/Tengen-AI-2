@@ -1,0 +1,152 @@
+.container {
+  display: flex-start;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding:50px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: #f8f8f8;
+}
+
+.logo {
+  display: flex-end;
+  align-items: right;
+  width: 50px;
+  height: 50px;
+}
+
+.title {
+  margin-top: 10px;
+  font-size: 30px;
+}
+
+
+
+.searchForm {
+  margin-top: 40px;
+}
+/* ... your existing styles ... */
+
+.inputWrapper {
+  display: inline-block;
+  position: relative;
+  max-width: 100%; /* To ensure it doesn't overflow its parent */
+}
+
+.hiddenSpan {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: pre-wrap; /* This keeps the formatting of the text */
+  visibility: hidden; /* Hide the span from view */
+  font-size: 1rem; /* Ensure this matches the input font size */
+  padding: 10px;
+  width: 100%; /* Set a width to avoid horizontal growth */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+
+
+.searchInput {
+  width: 1121px;
+  padding: 22px;
+  border: 0px solid #4c4d50;
+  border-radius: 24px;
+  outline: none;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 16px;
+  margin-right: 0px;
+  resize:auto;         /* Prevent manual resize */
+  overflow-y: hidden;      /* Enable vertical scroll if content exceeds the height */
+  height: auto;          /* Allow height to adjust based on content */
+  min-height: 40px;      /* Set a minimum height */
+  max-height: max-content;
+}
+.saveButton {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.searchButton {
+  display: inline-block;
+  margin-top: 25px;
+  margin-inline-start:550px;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 90px;
+  padding: 10px 15px;
+  background-color: #ecf4fc;
+  border: 1px solid #dfe1e5;
+  border-radius: 4px;
+  outline: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  
+}
+
+.searchButton:hover {
+  background-color: #a4a3a3;
+}
+
+.result {
+  margin-top: 20px;
+  width: 80%;
+  max-width: 900px;
+  border: 1px solid #dfe1e5;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+}
+
+.textarea {
+  width: 100%;
+  min-height: 300px; /* Add this line for a minimum height */
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 16px;
+  resize: none;
+}
+
+.editButton {
+  margin-top: 10px;
+  padding: 5px 10px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  
+
+  background-color: #12122fe8;
+  border: 1px solid #dfe1e5;
+  border-radius: 4px;
+  outline: none;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.editButton:hover {
+  background-color: #8cb788;
+}
+
+.sub {
+  flex-direction: column;
+  margin-top: 10px;
+  font-size: 15px;
+  align-items:center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
